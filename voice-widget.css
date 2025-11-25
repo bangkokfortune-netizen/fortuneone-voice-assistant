@@ -1,0 +1,115 @@
+
+#fortuneone-voice-widget {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.f1-voice-launcher {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #00a884;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  font-size: 26px;
+}
+
+.f1-voice-panel {
+  position: absolute;
+  bottom: 72px;
+  right: 0;
+  width: 320px;
+  max-height: 360px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.f1-voice-panel.f1-voice-open {
+  display: flex;
+}
+
+.f1-voice-header {
+  padding: 10px 12px;
+  background: #00a884;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f1-voice-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.f1-voice-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.f1-voice-status {
+  padding: 10px 12px;
+  font-size: 13px;
+  background: #f5f7f9;
+}
+
+.f1-voice-controls {
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.f1-voice-talk-btn {
+  border-radius: 999px;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #00a884;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.f1-voice-talk-btn.f1-voice-active {
+  background: #ff9800;
+}
+
+.f1-voice-log {
+  padding: 8px 10px;
+  flex: 1;
+  overflow-y: auto;
+  font-size: 12px;
+  background: #fafbfc;
+}
+
+.f1-voice-log-line {
+  margin-bottom: 4px;
+}
+
+/* Scrollbar */
+.f1-voice-log::-webkit-scrollbar {
+  width: 6px;
+}
+.f1-voice-log::-webkit-scrollbar-track {
+  background: transparent;
+}
+.f1-voice-log::-webkit-scrollbar-thumb {
+  background: #c5cad5;
+  border-radius: 3px;
+}
